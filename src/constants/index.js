@@ -1,12 +1,15 @@
 export const COLORS = {
-  // primary: "#538B55",
-  secondary: "#6CAE6F",
+  primary: "#151F38",
   black: "#0F0E0F",
   gray: "#F0F1F5",
   white: "#FFFFFF",
-  primary: "#151F38",
   input: "#B2B9CE",
   blue: "#518EE0",
+  lightBlue: "#E9F3F4",
+  green: "#11E925",
+  red: "#DC0E13",
+  lightGreen: "#95B9A7",
+  lightGray: "#B6BCBC",
 };
 
 export const FONT_SIZE = {

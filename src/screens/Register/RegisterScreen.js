@@ -55,7 +55,7 @@ const RegisterScreen = ({ navigation }) => {
               <Text style={styles.forgotPwd}>Forgot Password?</Text>
             </TouchableOpacity>
           </View>
-          <CustomButton title={"Sign In"} />
+          <CustomButton title={"Sign Up"} />
 
           <View style={styles.signInWrapper}>
             <View style={styles.signInDivider} />

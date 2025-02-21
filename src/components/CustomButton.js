@@ -6,7 +6,14 @@ const CustomButton = (props) => {
   return (
     <TouchableOpacity
       onPress={props.onPress}
-      style={[styles.buttonContainer, { ...props.style }]}
+      style={[
+        styles.buttonContainer,
+        {
+          paddingVertical:
+            props.paddingVtl || styles.buttonContainer.paddingVertical,
+        },
+        { ...props.style },
+      ]}
       activeOpacity={0.5}
     >
       <Text style={[styles.buttonText, { ...props.textStyle }]}>
@@ -33,3 +40,39 @@ const styles = StyleSheet.create({
 });
 
 export default CustomButton;
+
+export const ActionButton = (props) => {
+  return (
+    <TouchableOpacity
+      onPress={props.onPress}
+      style={[
+        style.buttonContainer,
+        {
+          backgroundColor:
+            props.bgColor || style.buttonContainer.backgroundColor,
+        },
+        { ...props.style },
+      ]}
+      activeOpacity={0.5}
+    >
+      <Text style={[style.buttonText, { ...props.textStyle }]}>
+        {props.title}
+      </Text>
+    </TouchableOpacity>
+  );
+};
+const style = StyleSheet.create({
+  buttonContainer: {
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: COLORS.primary,
+    paddingVertical: 8,
+    marginBottom: 10,
+  },
+  buttonText: {
+    fontSize: 14,
+    color: COLORS.white,
+    fontWeight: "semibold",
+  },
+});

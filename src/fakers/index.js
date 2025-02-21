@@ -1,0 +1,134 @@
+export const orders = [
+  {
+    id: "01",
+    status: "pending",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 5,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+  },
+  {
+    id: "02",
+    status: "completed",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 2,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+  },
+  {
+    id: "03",
+    status: "pending",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 1,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+  },
+  {
+    id: "04",
+    status: "pending",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 3,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+  },
+  {
+    id: "05",
+    status: "pending",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 4,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+  },
+  {
+    id: "06",
+    status: "completed",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 6,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+  },
+];
