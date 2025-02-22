@@ -14,7 +14,7 @@ import { orders } from "../../fakers";
 import OrderCard from "../../components/OrderCard";
 import { styles } from "./style";
 
-export default function OrderScreen() {
+export default function OrderScreen({ navigation }) {
   return (
     <ScrollView style={styles.screen}>
       <StatusBar backgroundColor={COLORS.white} barStyle={"dark-content"} />
@@ -29,7 +29,9 @@ export default function OrderScreen() {
       <View style={styles.orderContainer}>
         <FlatList
           data={orders}
-          renderItem={({ item }) => <OrderCard item={item} />}
+          renderItem={({ item }) => (
+            <OrderCard item={item} navigation={navigation} />
+          )}
         />
       </View>
     </ScrollView>

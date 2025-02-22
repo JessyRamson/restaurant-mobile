@@ -3,9 +3,13 @@ import React from "react";
 import { COLORS } from "../constants";
 import { ActionButton } from "./CustomButton";
 
-export default function OrderCard({ item }) {
+export default function OrderCard({ item, navigation }) {
   return (
-    <TouchableOpacity style={style.container} activeOpacity={0.5}>
+    <TouchableOpacity
+      style={style.container}
+      activeOpacity={0.5}
+      onPress={() => navigation.navigate("OrderDetail", { item: item })}
+    >
       <Text style={style.label}>{item.id}</Text>
       <View
         style={{

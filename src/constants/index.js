@@ -10,6 +10,7 @@ export const COLORS = {
   red: "#DC0E13",
   lightGreen: "#95B9A7",
   lightGray: "#B6BCBC",
+  yellow: "#FAD540",
 };
 
 export const FONT_SIZE = {

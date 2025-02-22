@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import OrderScreen from "../screens/Orders/OrderScreen";
+import OrderDetailScreen from "../screens/OrderDetails/OrderDetailScreen";
 
 export default function AppNavigation() {
   const AppNav = createNativeStackNavigator();
@@ -13,6 +14,16 @@ export default function AppNavigation() {
         component={OrderScreen}
         options={{
           headerTitle: "Current Orders",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
+      />
+      <AppNav.Screen
+        name="OrderDetail"
+        component={OrderDetailScreen}
+        options={{
+          headerTitle: "Order Details",
           headerTitleStyle: {
             fontWeight: "bold",
           },
