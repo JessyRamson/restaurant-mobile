@@ -3,6 +3,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import OrderScreen from "../screens/Orders/OrderScreen";
 import OrderDetailScreen from "../screens/OrderDetails/OrderDetailScreen";
+import OrderCompleteScreen from "../screens/OrderComplete/OrderCompleteScreen";
 
 export default function AppNavigation() {
   const AppNav = createNativeStackNavigator();
@@ -27,6 +28,13 @@ export default function AppNavigation() {
           headerTitleStyle: {
             fontWeight: "bold",
           },
+        }}
+      />
+      <AppNav.Screen
+        name="OrderComplete"
+        component={OrderCompleteScreen}
+        options={{
+          headerShown: false,
         }}
       />
     </AppNav.Navigator>

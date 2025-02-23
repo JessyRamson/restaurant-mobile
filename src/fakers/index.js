@@ -129,6 +129,14 @@ export const orders = [
         name: "Fries",
         qty: 1,
       },
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
     ],
   },
 ];

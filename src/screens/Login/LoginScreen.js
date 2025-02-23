@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   ScrollView,
+  ActivityIndicator,
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -13,8 +14,11 @@ import CustomButton from "../../components/CustomButton";
 import { styles } from "./style";
 import { StatusBar } from "expo-status-bar";
 import { COLORS } from "../../constants";
+import useLogin from "../../hooks/useLogin";
 
 const LoginScreen = ({ navigation }) => {
+  const { LoginUser, email, isLoading, password, setEmail, setPassword } =
+    useLogin();
   return (
     <ScrollView style={styles.container}>
       <SafeAreaView>
@@ -40,18 +44,31 @@ const LoginScreen = ({ navigation }) => {
             label={"Email"}
             placeholder={"Example@gmail.com"}
             keyboardType="email-address"
+            value={email}
+            onChangeText={(val) => setEmail(val)}
           />
           <CustomInput
             label={"Password"}
             placeholder={"At least 8 characters"}
             secureTextEntry={true}
+            value={password}
+            onChangeText={(val) => setPassword(val)}
           />
           <View style={styles.forgotPwdWrapper}>
             <TouchableOpacity activeOpacity={0.5}>
               <Text style={styles.forgotPwd}>Forgot Password?</Text>
             </TouchableOpacity>
           </View>
-          <CustomButton title={"Sign In"} />
+          <CustomButton
+            title={
+              isLoading ? (
+                <ActivityIndicator color={COLORS.white} size={"small"} />
+              ) : (
+                "Sign In"
+              )
+            }
+            onPress={() => LoginUser(email, password)}
+          />
 
           <View style={styles.signInWrapper}>
             <View style={styles.signInDivider} />

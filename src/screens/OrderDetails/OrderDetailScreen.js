@@ -6,7 +6,7 @@ import {
   FlatList,
 } from "react-native";
 import React from "react";
-import { useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { FontAwesome } from "@expo/vector-icons";
 import CustomButton from "../../components/CustomButton";
 import { styles } from "./style";
@@ -14,6 +14,7 @@ import { styles } from "./style";
 export default function OrderDetailScreen() {
   const route = useRoute();
   const param = route.params.item;
+  const navigation = useNavigation();
 
   return (
     <ImageBackground
@@ -63,6 +64,7 @@ export default function OrderDetailScreen() {
         <CustomButton
           title={"Confirm Delivery"}
           style={{ marginTop: 10, borderRadius: 50 }}
+          onPress={() => navigation.navigate("OrderComplete")}
         />
       </View>
     </ImageBackground>

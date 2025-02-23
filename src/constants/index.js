@@ -11,6 +11,7 @@ export const COLORS = {
   lightGreen: "#95B9A7",
   lightGray: "#B6BCBC",
   yellow: "#FAD540",
+  blackShadow: "#A8A8A8",
 };
 
 export const FONT_SIZE = {
