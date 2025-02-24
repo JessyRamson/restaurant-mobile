@@ -20,6 +20,7 @@ export const orders = [
         qty: 1,
       },
     ],
+    declineReason: "",
   },
   {
     id: "02",
@@ -42,6 +43,7 @@ export const orders = [
         qty: 1,
       },
     ],
+    declineReason: "",
   },
   {
     id: "03",
@@ -64,6 +66,7 @@ export const orders = [
         qty: 1,
       },
     ],
+    declineReason: "",
   },
   {
     id: "04",
@@ -86,6 +89,7 @@ export const orders = [
         qty: 1,
       },
     ],
+    declineReason: "",
   },
   {
     id: "05",
@@ -108,6 +112,7 @@ export const orders = [
         qty: 1,
       },
     ],
+    declineReason: "",
   },
   {
     id: "06",
@@ -138,5 +143,130 @@ export const orders = [
         qty: 1,
       },
     ],
+    declineReason: "",
+  },
+  {
+    id: "07",
+    status: "completed",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 6,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+    declineReason: "",
+  },
+  {
+    id: "08",
+    status: "completed",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 6,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+    declineReason: "",
+  },
+  {
+    id: "09",
+    status: "rejected",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 6,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+    declineReason: "",
+  },
+  {
+    id: "10",
+    status: "rejected",
+    name: "Sausage Delight",
+    date: "23 Jun, 2021",
+    time: "5:00PM",
+    table: 6,
+    duration: "5-15 Min",
+    description: "Duble Beaf",
+    price: 4000,
+    rating: "2.5k",
+    additonalItem: [
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+      {
+        name: "Burger",
+        qty: 2,
+      },
+      {
+        name: "Fries",
+        qty: 1,
+      },
+    ],
+    declineReason: "Busy!",
   },
 ];

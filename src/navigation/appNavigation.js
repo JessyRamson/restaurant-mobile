@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import OrderScreen from "../screens/Orders/OrderScreen";
 import OrderDetailScreen from "../screens/OrderDetails/OrderDetailScreen";
 import OrderCompleteScreen from "../screens/OrderComplete/OrderCompleteScreen";
+import DeliveredOrdersScreen from "../screens/DeliveredOrders/DeliveredOrdersScreen";
+import DeclinedOrdersScreen from "../screens/DeclinedOrders/DeclinedOrdersScreen";
 
 export default function AppNavigation() {
   const AppNav = createNativeStackNavigator();
@@ -35,6 +37,26 @@ export default function AppNavigation() {
         component={OrderCompleteScreen}
         options={{
           headerShown: false,
+        }}
+      />
+      <AppNav.Screen
+        name="DeliveredOrders"
+        component={DeliveredOrdersScreen}
+        options={{
+          headerTitle: "Delivered Orders",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
+      />
+      <AppNav.Screen
+        name="DeclinedOrders"
+        component={DeclinedOrdersScreen}
+        options={{
+          headerTitle: "Declined Orders",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
         }}
       />
     </AppNav.Navigator>

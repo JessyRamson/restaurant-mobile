@@ -31,12 +31,15 @@ export default function OrderCard({ item, navigation }) {
               title={"Accept"}
               style={style.button}
               bgColor={COLORS.green}
-              onPress={() => navigation.navigate("OrderComplete")}
+              onPress={() => navigation.navigate("DeliveredOrders")}
             />
             <ActionButton
               title={"Decline"}
               style={style.button}
               bgColor={COLORS.red}
+              onPress={() =>
+                navigation.navigate("DeclinedOrders", { param: item })
+              }
             />
           </View>
         )}
